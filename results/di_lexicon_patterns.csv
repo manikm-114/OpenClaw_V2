@@ -1,0 +1,39 @@
+category,idx,pattern
+action_oriented,1,\bdo this\b
+action_oriented,2,\bfollow (these|this) steps\b
+action_oriented,3,\bhow to\b
+action_oriented,4,\bguide\b
+action_oriented,5,\btutorial\b
+action_oriented,6,\bwalkthrough\b
+action_oriented,7,\bstep[- ]by[- ]step\b
+action_oriented,8,\byou should\b
+action_oriented,9,\byou must\b
+action_oriented,10,\btry\b
+action_oriented,11,\brun\b
+action_oriented,12,\bexecute\b
+action_oriented,13,\binstall\b
+action_oriented,14,\bdownload\b
+action_oriented,15,\bconfigure\b
+action_oriented,16,\bset up\b
+action_oriented,17,\bcopy\b
+action_oriented,18,\bpaste\b
+action_oriented,19,\bcommand\b
+action_oriented,20,\bcurl\b
+action_oriented,21,\bpowershell\b
+action_oriented,22,\bbash\b
+action_oriented,23,\bpython\b
+sensitive_execution_related,1,\bapi key\b
+sensitive_execution_related,2,\btoken\b
+sensitive_execution_related,3,\bpassword\b
+sensitive_execution_related,4,\bcredential\b
+sensitive_execution_related,5,\bsecret\b
+sensitive_execution_related,6,\bauth\b
+sensitive_execution_related,7,\bexploit\b
+sensitive_execution_related,8,\bhack\b
+sensitive_execution_related,9,\bbypass\b
+sensitive_execution_related,10,\bmalware\b
+sensitive_execution_related,11,\bphishing\b
+sensitive_execution_related,12,\bsteal\b
+sensitive_execution_related,13,\bdump\b
+sensitive_execution_related,14,\bleak\b
+sensitive_execution_related,15,\bpostgres\b

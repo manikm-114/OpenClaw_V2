@@ -1,0 +1,29 @@
+DI lexicon robustness summary
+============================
+
+Robustness design:
+  Variant DI removes broad technical tokens from ACTION_PATTERNS
+  Removed patterns (exact matches): \bpython\b, \bbash\b, \bpowershell\b, \bcurl\b, \bdownload\b, \binstall\b, \brun\b, \bexecute\b, \bcommand\b, \bcopy\b, \bpaste\b
+
+Key check:
+  We recomputed the DI–corrective coupling bins using (i) main DI and (ii) variant DI.
+  We report the binned corrective probabilities with Wilson 95% CIs.
+
+Outputs:
+  - G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw\results\di_robustness_bins_main.csv
+  - G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw\results\di_robustness_bins_variant.csv
+
+Main DI bins:
+di_bin  n_comments  k_corrective  di_min  di_max  di_med  p_corrective   ci_low  ci_high
+  DI=0        3896           464       0       0     0.0      0.119097 0.109299 0.129644
+    Q1        1408           188       1       2     1.0      0.133523 0.116750 0.152290
+    Q2         408            78       3       8     3.0      0.191176 0.155970 0.232144
+
+Variant DI bins:
+di_bin  n_comments  k_corrective  di_min  di_max  di_med  p_corrective   ci_low  ci_high
+  DI=0        4366           544       0       0     0.0      0.124599 0.115132 0.134727
+  DI>0        1346           186       1       6     1.0      0.138187 0.120778 0.157655
+
+Interpretation guidance (to write in SI):
+  If the probabilities increase monotonically across bins in both main and variant DI,
+  the coupling result is robust to reasonable lexicon pruning.

@@ -1,0 +1,37 @@
+Step 3: Mixed-effects / clustered logistic analysis (DI -> corrective signaling)
+--------------------------------------------------------------------------
+Rows (comments): 5712
+Unique posts (clusters): 470
+Outcome: is_corrective = 1{response_type == 'corrective'}
+Predictor used: DI (standardized)
+
+[PRIMARY MODEL] Binomial GLMM with post random intercept (BinomialBayesMixedGLM, VB fit)
+
+               Binomial Mixed GLM Results
+========================================================
+          Type Post. Mean Post. SD   SD  SD (LB) SD (UB)
+--------------------------------------------------------
+Intercept    M    -2.5737   0.0431                      
+x            M     0.1276   0.0436                      
+post_re      V     0.3222   0.0326 1.380   1.293   1.473
+========================================================
+Parameter types are mean structure (M) and variance
+structure (V)
+Variance parameters are modeled as log standard
+deviations
+
+Fixed effects (approx):
+     term      beta  se_approx  odds_ratio  or_ci95_low  or_ci95_high
+Intercept -2.573715   0.043133    0.076252     0.070070      0.082978
+        x  0.127625   0.043554    1.136126     1.043165      1.237373
+
+Random effects variance component (approx):
+                component  var_approx  sd_approx
+post_random_intercept_vc0    0.322161   0.567592
+
+
+[SI PARAGRAPH]
+Mixed-effects logistic regression (post-level random intercept).
+We modeled the probability that a comment is corrective as a function of DI (standardized), with a post-specific random intercept to account for clustering of comments within posts. Using a binomial GLMM (variational Bayes fit), the DI effect estimate was positive (beta=0.1276, approx. SD=0.0436), corresponding to an odds ratio of 1.136 (approx. 95% interval: 1.043–1.237).
+Note: This GLMM is fit via variational Bayes; uncertainty summaries are approximate.
+

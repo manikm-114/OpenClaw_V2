@@ -1,0 +1,20 @@
+Directive Intensity (DI) lexicon summary
+=======================================
+
+Definition:
+  DI is the capped count (cap=10) of matched regex patterns across two categories:
+    (1) action-oriented / instructional patterns
+    (2) sensitive / execution-related patterns
+
+Counts:
+  Action-oriented patterns: 23
+  Sensitive/execution-related patterns: 15
+  Total patterns: 38
+
+Implementation:
+  Source of truth: Codes/utils_openclaw.py
+  Matching: case-insensitive search over post text (title + content)
+  Scoring: DI = min( matches_action + matches_sensitive, 10 )
+
+Pattern list:
+  CSV exported to: G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw\results\di_lexicon_patterns.csv
