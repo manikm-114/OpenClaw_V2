@@ -1,0 +1,29 @@
+Step 2 FE: Within-agent fixed-effects regression after receiving correction
+===========================================================================
+
+Definition: event = corrective comment targets an agent-authored post or comment at time t0
+Targeting: if parent_id exists -> targets that parent comment; else targets the post
+Treatment: next M contributions by that agent AFTER t0 are marked treated=1
+Model: y_it = beta * treated_it + agent FE + error_it
+Estimation: within-agent demeaning + OLS (single regressor), cluster-robust SE by agent
+
+Events used: 136 (saved: G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw_Journal\results\step2_fe_events_used.csv)
+Total contributions: 42557
+
+[M=5] treated share = 0.010997
+  Outcome y=DI:
+    n=42557, agents=14490, beta=-0.0518933, se(cluster)=0.0534575, t=-0.970739
+  Outcome y=1[DI>0]:
+    n=42557, agents=14490, beta=-0.0203613, se(cluster)=0.0317812, t=-0.640669
+
+[M=10] treated share = 0.0160726
+  Outcome y=DI:
+    n=42557, agents=14490, beta=-0.0208961, se(cluster)=0.0589544, t=-0.354445
+  Outcome y=1[DI>0]:
+    n=42557, agents=14490, beta=-0.030345, se(cluster)=0.027177, t=-1.11657
+
+[M=20] treated share = 0.0212186
+  Outcome y=DI:
+    n=42557, agents=14490, beta=-0.0247521, se(cluster)=0.0466342, t=-0.530773
+  Outcome y=1[DI>0]:
+    n=42557, agents=14490, beta=-0.038399, se(cluster)=0.0209065, t=-1.8367

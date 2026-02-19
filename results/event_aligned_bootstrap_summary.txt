@@ -1,0 +1,13 @@
+Event-aligned bootstrap summary (regulatable threads)
+====================================================
+
+[time_window]
+  n = 32
+  mean   = -0.181632   (95% CI -0.358344, 0.0126398)
+  median = -0.225 (95% CI -0.333333, -0.104167)
+
+[n_window]
+  n = 32
+  mean   = -0.203125   (95% CI -0.3875, 0.003125)
+  median = -0.3 (95% CI -0.4, 0)
+

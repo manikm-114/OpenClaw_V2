@@ -15,6 +15,3 @@ Implementation:
   Source of truth: Codes/utils_openclaw.py
   Matching: case-insensitive search over post text (title + content)
   Scoring: DI = min( matches_action + matches_sensitive, 10 )
-
-Pattern list:
-  CSV exported to: G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw\results\di_lexicon_patterns.csv

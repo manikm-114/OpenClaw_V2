@@ -1,0 +1,42 @@
+Event-aligned negative feedback summary (within-thread)
+====================================================
+
+Input file: G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw_Journal\Datasets\comments_labeled.csv
+Time window: ±12 hours around first corrective reply (t0)
+N-window: ON (last N=5 before vs first N=5 after)
+DI metric: DI_comment computed on comment content using the same DI lexicon as posts
+High-DI threshold: DI_comment >= 3
+
+Threads with at least one corrective reply: 199
+
+TIME-WINDOW (±T hours) results
+-----------------------------
+Usable threads (>=1 before and after): 123
+Descriptive paired changes (after - before):
+  mean(delta mean DI_comment):   0.04482669563243516
+  median(delta mean DI_comment): 0.0
+  mean(delta high-DI rate):      0.0010162601626016261
+  median(delta high-DI rate):    0.0
+
+Regulatable threads (usable AND max DI_comment before > 0): 32
+Descriptive paired changes (after - before):
+  mean(delta mean DI_comment):   -0.1816321699134199
+  median(delta mean DI_comment): -0.225
+  mean(delta high-DI rate):      0.0
+  median(delta high-DI rate):    0.0
+
+N-WINDOW (fixed-N comments) results
+----------------------------------
+Usable N-window threads (>=1 before and after): 123
+Descriptive paired changes (after - before):
+  mean(delta mean DI_comment):   0.055284552845528454
+  median(delta mean DI_comment): 0.0
+  mean(delta high-DI rate):      0.0
+  median(delta high-DI rate):    0.0
+
+Regulatable N-window threads (usable AND max DI_comment before > 0): 26
+Descriptive paired changes (after - before):
+  mean(delta mean DI_comment):   -0.25
+  median(delta mean DI_comment): -0.4
+  mean(delta high-DI rate):      0.0
+  median(delta high-DI rate):    0.0

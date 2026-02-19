@@ -1,0 +1,12 @@
+Step 3 (v2): Coarse stratified comparison (early-corrected vs not early-corrected)
+===============================================================================
+
+Binary escalation outcome uses HIGH_DI=3 on comment di_comment.
+Strata = (di_post bin mode: binary) x (early volume tercile) x (early max DI bin 0 vs >0).
+
+We report weighted average differences over strata where both groups exist.
+For interpretability/power, DI>0-only summaries are also reported.
+
+Runs:
+ E  H_hours  threads_n  agg_RD_E_esc_high  agg_Diff_E_maxDI  agg_Diff_E_meanDI  agg_RD_H_esc_high  agg_Diff_H_maxDI  agg_Diff_H_meanDI  threads_DIpos_n  agg_RD_E_esc_high_DIpos  agg_Diff_E_maxDI_DIpos  agg_Diff_E_meanDI_DIpos  agg_RD_H_esc_high_DIpos  agg_Diff_H_maxDI_DIpos  agg_Diff_H_meanDI_DIpos                                                                                                                         out_threads                                                                                                                                    out_strata_E                                                                                                                                   out_strata_H
+ 5        6        470           -0.00694         -0.059672          -0.045322          -0.001694          0.002934          -0.036317              141                 0.008891               -0.025766                -0.059158                 0.017206                 0.06354                -0.027138 G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw_Journal\results\step3_threads_E5_H6.csv G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw_Journal\results\step3_strata_earlyByCount_E5_H6.csv G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw_Journal\results\step3_strata_earlyByTime_E5_H6.csv

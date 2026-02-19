@@ -9,9 +9,6 @@ Key check:
   We recomputed the DI–corrective coupling bins using (i) main DI and (ii) variant DI.
   We report the binned corrective probabilities with Wilson 95% CIs.
 
-Outputs:
-  - G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw\results\di_robustness_bins_main.csv
-  - G:\My Drive\1. Studies\RPI\Thesis\1. Prof Ge Wang\3. Extra Papers\3. MoltBot\Paper\OpenClaw\results\di_robustness_bins_variant.csv
 
 Main DI bins:
 di_bin  n_comments  k_corrective  di_min  di_max  di_med  p_corrective   ci_low  ci_high

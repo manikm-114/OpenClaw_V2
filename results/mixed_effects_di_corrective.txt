@@ -30,8 +30,3 @@ Random effects variance component (approx):
 post_random_intercept_vc0    0.322161   0.567592
 
 
-[SI PARAGRAPH]
-Mixed-effects logistic regression (post-level random intercept).
-We modeled the probability that a comment is corrective as a function of DI (standardized), with a post-specific random intercept to account for clustering of comments within posts. Using a binomial GLMM (variational Bayes fit), the DI effect estimate was positive (beta=0.1276, approx. SD=0.0436), corresponding to an odds ratio of 1.136 (approx. 95% interval: 1.043–1.237).
-Note: This GLMM is fit via variational Bayes; uncertainty summaries are approximate.
-
